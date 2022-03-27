@@ -1,0 +1,13 @@
+FROM node:14-alpine
+
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
+
+COPY . .
+
+RUN yarn install
+
+EXPOSE 9000
+RUN echo "ready to run server"
+
+CMD ["yarn", "start:prod"]
