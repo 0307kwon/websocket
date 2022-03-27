@@ -4,16 +4,16 @@ import {
   OnGatewayDisconnect,
   SubscribeMessage,
   WebSocketGateway,
-} from '@nestjs/websockets';
-import { Socket } from 'dgram';
-import { v4 as uuidv4 } from 'uuid';
+} from "@nestjs/websockets";
+import { Socket } from "dgram";
+import { v4 as uuidv4 } from "uuid";
 
 interface MySocket extends Socket {
   id?: string;
 }
 
 @WebSocketGateway(3001, {
-  path: '/socket',
+  path: "/socket",
 })
 export class SocketGateway implements OnGatewayConnection, OnGatewayDisconnect {
   private clients: { [id: string]: MySocket } = {};
@@ -27,7 +27,7 @@ export class SocketGateway implements OnGatewayConnection, OnGatewayDisconnect {
     delete this.clients[client.id];
   }
 
-  @SubscribeMessage('socket')
+  @SubscribeMessage("socket")
   handleEvent(@MessageBody() data: string) {
     Object.values(this.clients).forEach((client) => {
       client.send(JSON.stringify(data));

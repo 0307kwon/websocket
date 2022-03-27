@@ -1,11 +1,15 @@
 version: "3.7"
 services:
   websocket-server:
-    image: 0307kwon/websocket-server:latest
+    build: "./"
+    image: websocket-server
     container_name: websocket-server
-    # restart: always
+    restart: always
     depends_on:
       - reverse-proxy
+    ports:
+      - 9001:9001
+      - 8001:8001
   reverse-proxy:
     image: nginx:latest
     container_name: reverse-proxy

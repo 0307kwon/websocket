@@ -7,6 +7,7 @@ COPY . .
 
 WORKDIR /usr/src/app/packages/server
 
+EXPOSE 9001 3001
 RUN echo "ready to run server"
 
 CMD ["yarn", "start:prod"]

@@ -33,7 +33,7 @@ let SocketGateway = class SocketGateway {
     }
 };
 __decorate([
-    (0, websockets_1.SubscribeMessage)('socket'),
+    (0, websockets_1.SubscribeMessage)("socket"),
     __param(0, (0, websockets_1.MessageBody)()),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [String]),
@@ -41,7 +41,7 @@ __decorate([
 ], SocketGateway.prototype, "handleEvent", null);
 SocketGateway = __decorate([
     (0, websockets_1.WebSocketGateway)(3001, {
-        path: '/socket',
+        path: "/socket",
     })
 ], SocketGateway);
 exports.SocketGateway = SocketGateway;

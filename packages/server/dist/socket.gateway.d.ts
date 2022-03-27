@@ -1,6 +1,6 @@
 /// <reference types="node" />
-import { OnGatewayConnection, OnGatewayDisconnect } from '@nestjs/websockets';
-import { Socket } from 'dgram';
+import { OnGatewayConnection, OnGatewayDisconnect } from "@nestjs/websockets";
+import { Socket } from "dgram";
 interface MySocket extends Socket {
     id?: string;
 }
