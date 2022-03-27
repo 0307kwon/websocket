@@ -5,9 +5,8 @@ WORKDIR /usr/src/app
 
 COPY . .
 
-RUN yarn install
+WORKDIR /usr/src/app/packages/server
 
-EXPOSE 9000
 RUN echo "ready to run server"
 
 CMD ["yarn", "start:prod"]

@@ -1,4 +1,4 @@
-version: '3.7'
+version: "3.7"
 services:
   websocket-server:
     image: 0307kwon/websocket-server:latest
@@ -14,4 +14,4 @@ services:
       - 80:80
       - 443:443
     volumes:
-      - ./proxy/nginx.conf:/etc/nginx/nginx.conf
+      - ./packages/server/proxy/nginx.conf:/etc/nginx/nginx.conf
