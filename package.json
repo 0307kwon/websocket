@@ -1,7 +1,6 @@
 {
   "name": "websocket",
   "version": "1.0.0",
-  "private": true,
   "license": "MIT",
   "workspaces": {
     "packages": [
@@ -10,6 +9,8 @@
   },
   "packageManager": "yarn@3.2.0",
   "devDependencies": {
-    "lerna": "^4.0.0"
+    "eslint": "^8.12.0",
+    "prettier": "^2.6.1",
+    "typescript": "^4.6.3"
   }
 }
