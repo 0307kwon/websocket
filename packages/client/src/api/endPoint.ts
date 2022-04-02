@@ -23,4 +23,6 @@ const END_POINT: {
   throw new Error("env MODE가 설정되지 않았습니다.");
 })();
 
+console.log(END_POINT, "요고");
+
 export default END_POINT;
