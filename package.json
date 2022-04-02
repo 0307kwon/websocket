@@ -2,6 +2,12 @@
   "name": "websocket",
   "version": "1.0.0",
   "license": "MIT",
+  "scripts": {
+    "build:all": "yarn workspaces foreach -pt run build",
+    "docker-down": "docker-compose down",
+    "docker-up": "docker-compose up -d --build",
+    "start": "yarn build:all && yarn docker-down && yarn docker-up"
+  },
   "workspaces": {
     "packages": [
       "packages/*"
