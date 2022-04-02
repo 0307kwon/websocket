@@ -1,10 +1,12 @@
 type Url = string;
 
+type Mode = "production" | "development" | "development_with_jenkins";
+
 const END_POINT: {
   API: Url;
   SOCKET: Url;
 } = (() => {
-  const nodeEnv = process.env.MODE as "production" | "development";
+  const nodeEnv = process.env.MODE as Mode;
 
   if (nodeEnv === "production") {
     return {
@@ -17,6 +19,13 @@ const END_POINT: {
     return {
       API: process.env.DEV_API_SERVER,
       SOCKET: process.env.DEV_SOCKET_SERVER,
+    };
+  }
+
+  if (nodeEnv === "development_with_jenkins") {
+    return {
+      API: process.env.DEV_WITH_JENKINS_API_SERVER,
+      SOCKET: process.env.DEV_WITH_JENKINS_SOCKET_SERVER,
     };
   }
 

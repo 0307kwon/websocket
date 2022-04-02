@@ -4,7 +4,7 @@
   "scripts": {
     "typecheck": "tsc --noEmit",
     "build": "cross-env MODE=production webpack --config webpack.prod.js",
-    "build:dev": "cross-env MODE=development webpack --config webpack.prod.js",
+    "build:dev-with-jenkins": "cross-env MODE=development_with_jenkins webpack --config webpack.prod.js",
     "start:dev": "cross-env MODE=development webpack serve --config webpack.dev.js"
   },
   "dependencies": {
