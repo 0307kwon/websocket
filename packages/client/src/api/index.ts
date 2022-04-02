@@ -7,6 +7,4 @@ const API = {
   },
 };
 
-console.log(END_POINT, "이거지");
-
 export default API;

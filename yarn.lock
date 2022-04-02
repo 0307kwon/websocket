@@ -3879,7 +3879,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cross-spawn@npm:^7.0.0, cross-spawn@npm:^7.0.2, cross-spawn@npm:^7.0.3":
+"cross-env@npm:^7.0.3":
+  version: 7.0.3
+  resolution: "cross-env@npm:7.0.3"
+  dependencies:
+    cross-spawn: ^7.0.1
+  bin:
+    cross-env: src/bin/cross-env.js
+    cross-env-shell: src/bin/cross-env-shell.js
+  checksum: 26f2f3ea2ab32617f57effb70d329c2070d2f5630adc800985d8b30b56e8bf7f5f439dd3a0358b79cee6f930afc23cf8e23515f17ccfb30092c6b62c6b630a79
+  languageName: node
+  linkType: hard
+
+"cross-spawn@npm:^7.0.0, cross-spawn@npm:^7.0.1, cross-spawn@npm:^7.0.2, cross-spawn@npm:^7.0.3":
   version: 7.0.3
   resolution: "cross-spawn@npm:7.0.3"
   dependencies:
@@ -4303,6 +4315,13 @@ __metadata:
   peerDependencies:
     webpack: ^4 || ^5
   checksum: e69f5b5de16f99a0acc35f2bc75e1dd40a587053cdb62ffb2fe80cea197ba703a829771f6db270a01e96ca8f52c8160671c243875a7b9c7c040bc32fc3d400f1
+  languageName: node
+  linkType: hard
+
+"dotenv@npm:^16.0.0":
+  version: 16.0.0
+  resolution: "dotenv@npm:16.0.0"
+  checksum: 664cebb51f0a9a1d1b930f51f0271e72e26d62feaecc9dc03df39453dd494b4e724809ca480fb3ec3213382b1ed3f791aaeb83569a137f9329ce58efd4853dbf
   languageName: node
   linkType: hard
 
@@ -9830,8 +9849,9 @@ __metadata:
     "@types/react": ^17.0.39
     "@types/react-dom": ^17.0.11
     babel-loader: ^8.2.3
+    cross-env: ^7.0.3
     css-loader: ^6.7.1
-    dotenv-webpack: ^7.1.0
+    dotenv: ^16.0.0
     html-webpack-plugin: ^5.5.0
     less: ^4.1.2
     less-loader: ^10.2.0
@@ -9900,6 +9920,7 @@ __metadata:
   resolution: "websocket@workspace:."
   dependencies:
     "@types/node": ^17.0.23
+    dotenv-webpack: ^7.1.0
     eslint: ^8.12.0
     express: ^4.17.3
     prettier: ^2.6.1

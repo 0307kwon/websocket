@@ -3,8 +3,9 @@
   "packageManager": "yarn@3.2.0",
   "scripts": {
     "typecheck": "tsc --noEmit",
-    "build": "webpack --config webpack.prod.js",
-    "start:dev": "webpack serve --config webpack.dev.js"
+    "build": "cross-env MODE=production webpack --config webpack.prod.js",
+    "build:dev": "cross-env MODE=development webpack --config webpack.prod.js",
+    "start:dev": "cross-env MODE=development webpack serve --config webpack.dev.js"
   },
   "dependencies": {
     "@babel/core": "^7.17.5",
@@ -22,8 +23,9 @@
     "@types/babel__core": "^7",
     "@types/react": "^17.0.39",
     "@types/react-dom": "^17.0.11",
+    "cross-env": "^7.0.3",
     "css-loader": "^6.7.1",
-    "dotenv-webpack": "^7.1.0",
+    "dotenv": "^16.0.0",
     "less": "^4.1.2",
     "less-loader": "^10.2.0",
     "style-loader": "^3.3.1",
