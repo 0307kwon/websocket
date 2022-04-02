@@ -1,6 +1,6 @@
 type Url = string;
 
-type Mode = "production" | "development" | "development_with_jenkins";
+type Mode = "production" | "development" | "development-with-docker";
 
 const END_POINT: {
   API: Url;
@@ -22,16 +22,16 @@ const END_POINT: {
     };
   }
 
-  if (nodeEnv === "development_with_jenkins") {
+  if (nodeEnv === "development-with-docker") {
     return {
-      API: process.env.DEV_WITH_JENKINS_API_SERVER,
-      SOCKET: process.env.DEV_WITH_JENKINS_SOCKET_SERVER,
+      API: process.env.DEV_WITH_DOCKER_API_SERVER,
+      SOCKET: process.env.DEV_WITH_DOCKER_SOCKET_SERVER,
     };
   }
 
   throw new Error("env MODE가 설정되지 않았습니다.");
 })();
 
-console.log(END_POINT, "요고");
+console.log(END_POINT);
 
 export default END_POINT;
