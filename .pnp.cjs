@@ -43,6 +43,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
+            ["@types/node", "npm:17.0.23"],\
             ["eslint", "npm:8.12.0"],\
             ["express", "npm:4.17.3"],\
             ["prettier", "npm:2.6.1"],\
@@ -6322,6 +6323,48 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["dot-case", "npm:3.0.4"],\
             ["no-case", "npm:3.0.4"],\
             ["tslib", "npm:2.3.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["dotenv", [\
+        ["npm:8.6.0", {\
+          "packageLocation": "./.yarn/cache/dotenv-npm-8.6.0-2ce3e9f7bb-38e902c80b.zip/node_modules/dotenv/",\
+          "packageDependencies": [\
+            ["dotenv", "npm:8.6.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["dotenv-defaults", [\
+        ["npm:2.0.2", {\
+          "packageLocation": "./.yarn/cache/dotenv-defaults-npm-2.0.2-436a76242a-c005960bd0.zip/node_modules/dotenv-defaults/",\
+          "packageDependencies": [\
+            ["dotenv-defaults", "npm:2.0.2"],\
+            ["dotenv", "npm:8.6.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["dotenv-webpack", [\
+        ["npm:7.1.0", {\
+          "packageLocation": "./.yarn/cache/dotenv-webpack-npm-7.1.0-03e70e33fa-e69f5b5de1.zip/node_modules/dotenv-webpack/",\
+          "packageDependencies": [\
+            ["dotenv-webpack", "npm:7.1.0"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:54884455276d0fa07895bb337430767717773950e91bd12087adc8675d2598e0b0a053a2e27ad2b9a1a7d54b237c41540bb99cf80497d98a8c3d5b4024229434#npm:7.1.0", {\
+          "packageLocation": "./.yarn/__virtual__/dotenv-webpack-virtual-6a15cf3883/0/cache/dotenv-webpack-npm-7.1.0-03e70e33fa-e69f5b5de1.zip/node_modules/dotenv-webpack/",\
+          "packageDependencies": [\
+            ["dotenv-webpack", "virtual:54884455276d0fa07895bb337430767717773950e91bd12087adc8675d2598e0b0a053a2e27ad2b9a1a7d54b237c41540bb99cf80497d98a8c3d5b4024229434#npm:7.1.0"],\
+            ["@types/webpack", null],\
+            ["dotenv-defaults", "npm:2.0.2"],\
+            ["webpack", "virtual:54884455276d0fa07895bb337430767717773950e91bd12087adc8675d2598e0b0a053a2e27ad2b9a1a7d54b237c41540bb99cf80497d98a8c3d5b4024229434#npm:5.70.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/webpack",\
+            "webpack"\
           ],\
           "linkType": "HARD"\
         }]\
@@ -12730,6 +12773,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["websocket", "workspace:."],\
+            ["@types/node", "npm:17.0.23"],\
             ["eslint", "npm:8.12.0"],\
             ["express", "npm:4.17.3"],\
             ["prettier", "npm:2.6.1"],\
@@ -12752,6 +12796,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react-dom", "npm:17.0.14"],\
             ["babel-loader", "virtual:54884455276d0fa07895bb337430767717773950e91bd12087adc8675d2598e0b0a053a2e27ad2b9a1a7d54b237c41540bb99cf80497d98a8c3d5b4024229434#npm:8.2.4"],\
             ["css-loader", "virtual:54884455276d0fa07895bb337430767717773950e91bd12087adc8675d2598e0b0a053a2e27ad2b9a1a7d54b237c41540bb99cf80497d98a8c3d5b4024229434#npm:6.7.1"],\
+            ["dotenv-webpack", "virtual:54884455276d0fa07895bb337430767717773950e91bd12087adc8675d2598e0b0a053a2e27ad2b9a1a7d54b237c41540bb99cf80497d98a8c3d5b4024229434#npm:7.1.0"],\
             ["html-webpack-plugin", "virtual:54884455276d0fa07895bb337430767717773950e91bd12087adc8675d2598e0b0a053a2e27ad2b9a1a7d54b237c41540bb99cf80497d98a8c3d5b4024229434#npm:5.5.0"],\
             ["less", "npm:4.1.2"],\
             ["less-loader", "virtual:54884455276d0fa07895bb337430767717773950e91bd12087adc8675d2598e0b0a053a2e27ad2b9a1a7d54b237c41540bb99cf80497d98a8c3d5b4024229434#npm:10.2.0"],\
