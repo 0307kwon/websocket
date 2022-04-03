@@ -23,6 +23,21 @@ websocket을 사용하는 프로젝트를 만들 때 사용할 수 있습니다.
   - 서버
     - nest
 
+## 포트 바인딩
+
+- api, 정적파일 서버
+  - 외부: 80 -> 내부: 9001
+- websocket 서버
+  - 외부: 4000 -> 내부 3001
+
+포트 변경을 위해서는 다음 파일의 변경이 필요합니다.
+외부 포트 수정 시 서버 컴퓨터의 security group도 바꿔주세요.
+
+- docker-compose.yaml
+  ports 속성을 수정하여 개방할 외부 포트 설정
+- nginx.conf
+  외부 포트 -> 내부 포트 바인딩
+
 ## 추가로 필요한 설정
 
 ### 최상위 폴더에 .env 파일이 있어야합니다.
@@ -94,9 +109,9 @@ pipeline {
 ## QnA
 
 ### 타입스크립트가 vscode에서 동작하지 않는 현상
+
 1. cmd + shift + p > select typescript version
-    <img width="886" alt="스크린샷 2022-04-03 오후 3 08 23" src="https://user-images.githubusercontent.com/48755175/161414301-922f312f-6a09-4b10-92f4-07faebe8bf71.png">
+   <img width="886" alt="스크린샷 2022-04-03 오후 3 08 23" src="https://user-images.githubusercontent.com/48755175/161414301-922f312f-6a09-4b10-92f4-07faebe8bf71.png">
 
 2. use workspace version 선택
-    <img width="887" alt="스크린샷 2022-04-03 오후 3 08 33" src="https://user-images.githubusercontent.com/48755175/161414332-c03954ab-8588-429f-9d03-f74c633d0e25.png">
-
+   <img width="887" alt="스크린샷 2022-04-03 오후 3 08 33" src="https://user-images.githubusercontent.com/48755175/161414332-c03954ab-8588-429f-9d03-f74c633d0e25.png">
