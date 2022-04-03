@@ -8,7 +8,7 @@ websocket을 사용하는 프로젝트를 만들 때 사용할 수 있습니다.
 1. webpack-dev-server를 통해 각 패키지 내에서 테스트
 2. root workspace 폴더에서 yarn start를 통해 서버와 동일한 환경으로 테스트
 3. 깃헙에 올리고 젠킨스 빌드 후 실제로 테스트
-   - 젠킨스 빌드 파이프라인 script는 아래를 참고
+   - 젠킨스 빌드 파이프라인 script는 [여기](https://github.com/0307kwon/websocket-template#%EC%A0%A0%ED%82%A8%EC%8A%A4-%ED%8C%8C%EC%9D%B4%ED%94%84%EB%9D%BC%EC%9D%B8-script-%EC%84%A4%EC%A0%95)를 참고
 
 ## spec
 
@@ -22,6 +22,7 @@ websocket을 사용하는 프로젝트를 만들 때 사용할 수 있습니다.
     - less
   - 서버
     - nest
+    - websockt (socket.io를 사용하려면 수정이 필요합니다.)
 
 ## 포트 바인딩
 
