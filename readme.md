@@ -90,3 +90,13 @@ pipeline {
     }
 }
 ```
+
+## QnA
+
+### 타입스크립트가 vscode에서 동작하지 않는 현상
+1. cmd + shift + p > select typescript version
+    <img width="886" alt="스크린샷 2022-04-03 오후 3 08 23" src="https://user-images.githubusercontent.com/48755175/161414301-922f312f-6a09-4b10-92f4-07faebe8bf71.png">
+
+2. use workspace version 선택
+    <img width="887" alt="스크린샷 2022-04-03 오후 3 08 33" src="https://user-images.githubusercontent.com/48755175/161414332-c03954ab-8588-429f-9d03-f74c633d0e25.png">
+
