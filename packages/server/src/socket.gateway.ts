@@ -12,9 +12,7 @@ interface MySocket extends Socket {
   id?: string;
 }
 
-@WebSocketGateway(3001, {
-  path: "/socket",
-})
+@WebSocketGateway(3001)
 export class SocketGateway implements OnGatewayConnection, OnGatewayDisconnect {
   private clients: { [id: string]: MySocket } = {};
 
